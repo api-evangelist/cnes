@@ -1,0 +1,51 @@
+generated: '2026-10-23'
+method: probed
+generator: harvest-packages.py
+source: registry metadata endpoints (registry.npmjs.org, pypi.org, rubygems.org, api.nuget.org, packagist.org, crates.io) ; github.com/CNES
+ownership_rule: 'official: true only when the registry metadata (homepage, repository, author, URLs) names the provider''s domain (cnes.fr, security/cnes-domain-security.yml)
+  or its accepted GitHub org (CNES).'
+packages:
+- name: Pandora_plugin_libSGM
+  registry: github
+  url: https://github.com/CNES/Pandora_plugin_libSGM
+  language: Python
+  official: true
+  version: null
+  published: '2026-06-12'
+  source_repo: https://github.com/CNES/Pandora_plugin_libSGM
+  evidence: repository in github.com/CNES, whose profile names the provider's domain
+- name: Pandora_libSGM
+  registry: github
+  url: https://github.com/CNES/Pandora_libSGM
+  language: C++
+  official: true
+  version: null
+  published: '2026-05-12'
+  source_repo: https://github.com/CNES/Pandora_libSGM
+  evidence: repository in github.com/CNES, whose profile names the provider's domain
+- name: librle
+  registry: github
+  url: https://github.com/CNES/librle
+  language: C
+  official: true
+  version: null
+  published: '2024-07-02'
+  source_repo: https://github.com/CNES/librle
+  evidence: repository in github.com/CNES, whose profile names the provider's domain
+- name: libgse
+  registry: github
+  url: https://github.com/CNES/libgse
+  language: C
+  official: true
+  version: null
+  published: '2024-07-02'
+  source_repo: https://github.com/CNES/libgse
+  evidence: repository in github.com/CNES, whose profile names the provider's domain
+- name: cnes
+  registry: rubygems
+  url: https://rubygems.org/gems/cnes
+  language: Ruby
+  official: false
+  version: 1.0.0
+  published: '2022-07-25'
+  evidence: 'name match only: the metadata names neither the provider''s domain nor its GitHub org'
